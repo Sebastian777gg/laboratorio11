@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 4</title>
+</head>
+<body>
+    <script>
+        let numAleatorio = Math.floor(Math.random() * 10)+ 1;
+        console.log(numAleatorio);
+
+        let intentoUsuario = prompt(" Adivina un numero entre 1 y 10: ")
+        intentoUsuario = parseFloat(intentoUsuario);
+        if(intentoUsuario  > 10 || intentoUsuario < 1){
+            alert("Intento no valido, digite un numero entre 1 y 10");
+        }else if(intentoUsuario === numAleatorio){
+            alert("¡Felicidades, adivinaste el número!");
+        }else{
+            alert(`Lo siento, el numero era ${numAleatorio}, donde ${intentoUsuario} fue el numero que ingresaste` );
+        }
+    </script>
+    
+</body>
+</html>
